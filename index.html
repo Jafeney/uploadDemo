@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+
+    <input id="upload-file" type="file" />
+    <div>
+        <img id="ImgPh" width="110" height="120" src="" />
+    </div>
+
+
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="uploadPreview.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#upload-file").uploadPreview({ Img: "ImgPh", Width: 120, Height: 120, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], Callback: function () { }});
+        });
+    </script>
+</body>
+</html>
